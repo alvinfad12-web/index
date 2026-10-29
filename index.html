@@ -955,7 +955,7 @@ c.appendChild(e);
 }
 const n = document.createElement('div');
 n.className = 'sn';
-n.textContent = it.name || 'Hadiah';
+n.textContent = it.name || 'Prize';
 c.appendChild(n);
 return c;
 }
@@ -1023,8 +1023,8 @@ const winEl = document.getElementById('ovSpinWin');
 if(winEl) winEl.classList.add('won');
 result.innerHTML =
 (win.img ? `<img src="${escapeAttr(win.img)}">` : '<div style="font-size:70px;">🎁</div>') +
-'<div class="rl">Selamat! Hadiah kamu</div>' +
-`<div class="rn">${escapeHTML(win.name || 'Hadiah')}</div>`;
+'<div class="rl">Congratulations! Your prize</div>' +
+`<div class="rn">${escapeHTML(win.name || 'Prize')}</div>`;
 result.classList.add('show');
 spinHideTimer = setTimeout(hideSpin, SPIN_HOLD_MS);
 };
